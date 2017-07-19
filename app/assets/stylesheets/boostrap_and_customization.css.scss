@@ -1,8 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Zilla+Slab:400,700);
+
 $body-bg: white;
+$font-family-sans-serif: 'Zilla Slab', 'sans-serif';
 $brand-primary: #34495e;
+$btn-info-color: white;
 $navbar-default-bg: #2c3e50; 
 $navbar-default-link-color: white;
+$navbar-height: 60px;
+$navbar-text-size: 40px;
 $jumbotron-bg: #ecf0f1;
- 
+
+.center {
+	text-align: center;
+}
+
+.navbar-brand {
+	font-weight: bold;
+} 
 
 @import 'bootstrap'
