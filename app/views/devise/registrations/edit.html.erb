@@ -1,7 +1,7 @@
 <div class="panel panel-primary">
   <div class="panel-heading">
     <h2>Edit <%= resource_name.to_s.humanize %></h2>
-  </div> <!-- heading -->
+  </div>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
@@ -10,7 +10,7 @@
       <div class="form-group">
         <%= f.label :email %><br />
         <%= f.email_field :email, autofocus: true, class: "form-control" %>
-      </div> <!-- email -->
+      </div>
 
       <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
         <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
@@ -23,31 +23,31 @@
           <br />
           <em><%= @minimum_password_length %> characters minimum</em>
         <% end %>
-      </div> <!-- new password -->
+      </div>
 
       <div class="form-group">
         <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
         <%= f.password_field :current_password, autocomplete: "off", class: "form-control" %>
-      </div> <!-- current password -->
+      </div>
 
       <div class="actions">
         <%= f.submit "Update" %>
-      </div> <!-- update button -->
-    </div> <!-- body -->
-  </div> <!-- panel -->
+      </div>
+    </div>
+  </div>
   <% end %>
   
   <div class="panel panel-primary">
     <div class="panel-heading">
       <h3>Cancel My Account</h3> 
-    </div> <!-- heading -->
+    </div> 
       
       <div class="panel-body">
         <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
-      </div> <!-- body -->
+      </div>
   
-  </div> <!-- panel -->
+  </div>
 
 <div class="panel-footer">
   <%= link_to "Back", :back %>
-</div> <!-- footer -->
+</div>
